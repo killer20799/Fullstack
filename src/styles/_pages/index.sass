@@ -1,0 +1,83 @@
+main
+	background: url('../img/bg.png') center center no-repeat
+	background-size: cover
+	width: 100%
+	min-height: 100%
+	height: 100vh
+	overflow: hidden
+	position: relative
+	#logo
+		text-align: center
+		padding: 2rem
+		img
+			max-width: 200px
+		+media-breakpoint-up(md)
+			position: absolute
+			top: 0
+			left: 0
+	#chuc
+		text-align: center
+		padding: 2rem
+		img
+			max-width: 300px
+		h2
+			+fw(900)
+			color: #ffffff
+			margin: 3rem
+			+text-shadow()
+		+media-breakpoint-up(md)
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translateX(-50%) translateY(-50%)
+	#thong
+		background: url('../img/tree.png') bottom right no-repeat
+		background-size: cover
+		width: 100%
+		max-height: 200px
+		height: 100%
+		position: absolute
+		bottom: 2rem
+		right: 0
+		img
+			position: fixed
+			bottom: 2rem
+			right: 0
+			+media-breakpoint-down(md)
+				display: none
+	#play
+		height: 3rem
+		width: 3rem
+		background: #005332
+		color: #ffffff
+		display: flex
+		justify-content: center
+		align-items: center
+		border: 4px solid #f5ea14
+		+bor-rad(50%)
+		position: fixed
+		bottom: calc(1rem - 4px)
+		left: 2rem
+		z-index: 999
+		cursor: pointer
+	#pause
+		height: 3rem
+		width: 3rem
+		background: #005332
+		color: #ffffff
+		display: flex
+		justify-content: center
+		align-items: center
+		border: 4px solid #f5ea14
+		+bor-rad(50%)
+		position: fixed
+		bottom: calc(1rem - 4px)
+		left: 2rem
+		z-index: 999
+		cursor: pointer
+	#nhac
+		opacity: 0
+		position: absolute
+		top: 0
+		right: 0
+		z-index: -1

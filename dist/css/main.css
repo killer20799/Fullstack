@@ -6322,4 +6322,91 @@ html, body {
   .container {
     width: auto; } }
 
+main {
+  background: url("../img/bg.png") center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative; }
+  main #logo {
+    text-align: center;
+    padding: 2rem; }
+    main #logo img {
+      max-width: 200px; }
+    @media (min-width: 768px) {
+      main #logo {
+        position: absolute;
+        top: 0;
+        left: 0; } }
+  main #chuc {
+    text-align: center;
+    padding: 2rem; }
+    main #chuc img {
+      max-width: 300px; }
+    main #chuc h2 {
+      font-weight: 900;
+      color: #ffffff;
+      margin: 3rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); }
+    @media (min-width: 768px) {
+      main #chuc {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%); } }
+  main #thong {
+    background: url("../img/tree.png") bottom right no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+    position: absolute;
+    bottom: 2rem;
+    right: 0; }
+    main #thong img {
+      position: fixed;
+      bottom: 2rem;
+      right: 0; }
+      @media (max-width: 991.98px) {
+        main #thong img {
+          display: none; } }
+  main #play {
+    height: 3rem;
+    width: 3rem;
+    background: #005332;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #f5ea14;
+    border-radius: 50%;
+    position: fixed;
+    bottom: calc(1rem - 4px);
+    left: 2rem;
+    z-index: 999;
+    cursor: pointer; }
+  main #pause {
+    height: 3rem;
+    width: 3rem;
+    background: #005332;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #f5ea14;
+    border-radius: 50%;
+    position: fixed;
+    bottom: calc(1rem - 4px);
+    left: 2rem;
+    z-index: 999;
+    cursor: pointer; }
+  main #nhac {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1; }
+
 /*# sourceMappingURL=main.css.map */

@@ -31,4 +31,15 @@ $(function () {
         $('select.form-control').removeClass('form-control').css('width', '100%');
     }
 });
+$('#pause').hide();
+$('#play').on('click', function () {
+    $('#play').hide();
+    $('#nhac').get(0).play();
+    $('#pause').show();
+});
+$('#pause').on('click', function () {
+    $('#pause').hide();
+    $('#nhac').get(0).pause();
+    $('#play').show();
+});
 //# sourceMappingURL=main.js.map
