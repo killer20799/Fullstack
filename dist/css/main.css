@@ -6322,4 +6322,18 @@ html, body {
   .container {
     width: auto; } }
 
+.header {
+  text-align: center;
+  padding: 1rem 0; }
+  .header img {
+    width: 150px; }
+  .header ul {
+    padding: 1.5rem; }
+    .header ul li {
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.3);
+      padding: .5rem; }
+  .header .navbar {
+    padding: 0; }
+
 /*# sourceMappingURL=main.css.map */
