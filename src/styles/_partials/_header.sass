@@ -1,8 +1,63 @@
-.navbar
-	.navbar-brand
-		img
-			width: 50%
-			height: auto
-	button
-		outline: none
+header
+	transition: .5s all ease-in-out
+	background: #f8f9fa99 !important
+	position: relative
+	.navbar
+		.navbar-brand
+			margin: 0
+			img
+				width: 50%
+				height: auto
+		button
+			outline: none
+	&.active
+		background: #ffffff !important
+		transition: .5s all ease-in-out
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+	+media-breakpoint-up(lg)
+		.navbar
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-direction: column
+			text-align: center
+			.navbar-brand
+				padding: 2rem 2rem 0 2rem
+				img
+					width: 200px
+			ul
+				padding: 2rem
+				li
+					padding: 0 1rem
+					display: flex
+					justify-content: center
+					align-items: center
+					+fw(bold)
+					+fz(15px)
+					position: relative
+					a
+						padding: 0 2rem
+					i
+						color: grey
+					&:before
+						content: ''
+						height: 2px
+						width: 1.5rem
+						background: #e4911c
+						position: absolute
+						bottom: 0
+						left: 50%
+						transform: translate(-50%, 50%)
+						opacity: 0
+						transition: .1s all ease-in-out
+					&:hover
+						a
+							color: #072353 !important
+						&:before
+							opacity: 1
+							transition: .1s all ease-in-out
+
 
