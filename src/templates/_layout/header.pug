@@ -1,26 +1,31 @@
-.header
-	nav.navbar
-		.container-fluid
-			img.img-fluid.navbar-brand(src="./img/logo.png", alt="")
-			button.navbar-toggler.hidden-lg-up.pull-right(type="button" data-toggle="collapse" data-target="#collapsingNavbar1")
-				i.fas.fa-bars
-			#collapsingNavbar1.collapse.navbar-toggleable-md
-				ul.nav.navbar-nav
+<!-- ////////////// HEADER ////////////// -->
+header.bg-light
+	.container
+		nav.navbar.navbar-expand-lg.navbar-light
+			a.navbar-brand(href="#") 
+				img(src="./img/logo.png", alt="Logo")
+			//- Đây là nút sẽ hiển thị trong mobile
+			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation")
+				span.fa.fa-bars
+			#fullStackMenu.collapse.navbar-collapse
+				//- Thuộc tính '.mr-auto' này sẽ đẩy me nu về bên phải 
+				.mr-auto
+				ul.navbar-nav
+					li.nav-item.active
+						a.nav-link(href="index.html")
+							| Trang chủ
 					li.nav-item
-						a.nav-link(href="#") Link
+						a.nav-link(href="services.html") HOME
 					li.nav-item
-						a.nav-link(href="#") Link
+						a.nav-link(href="about.html") ABOUT
 					li.nav-item
-						a.nav-link(href="#") About
-
-	
-	ul.list-unstyled.list-inline.m-0
-		li.list-inline-item.mr-0 HOME
-		li.list-inline-item.mr-0 ABOUT
-		li.list-inline-item.mr-0 CONTACT
-		li.list-inline-item.mr-0 SHOP
-		li.list-inline-item.mr-0 MY ACCOUNT
-		li.list-inline-item.mr-0
-			i.fas.fa-search
-		li.list-inline-item.mr-0
-			i.fas.fa-shopping-bag
+						a.nav-link(href="contact.html") CONTACT
+					li.nav-item
+						a.nav-link(href="contact.html") SHOP
+					li.nav-item
+						a.nav-link(href="contact.html") MY ACCOUNT
+					li.nav-item
+						i.fas.fa-search
+					li.nav-item
+						i.fas.fa-shopping-bag
+<!-- ////////////// HEADER ////////////// -->
