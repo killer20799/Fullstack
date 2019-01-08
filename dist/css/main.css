@@ -6324,8 +6324,7 @@ html, body {
 
 header {
   transition: .5s all ease-in-out;
-  background: #f8f9fa99 !important;
-  position: relative; }
+  background: #ffffff !important; }
   header .navbar .navbar-brand {
     margin: 0; }
     header .navbar .navbar-brand img {
@@ -6339,16 +6338,18 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; }
+    width: 100%;
+    z-index: 999; }
   @media (min-width: 992px) {
     header .navbar {
+      padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       text-align: center; }
       header .navbar .navbar-brand {
-        padding: 2rem 2rem 0 2rem; }
+        padding: 2rem 0 0 0; }
         header .navbar .navbar-brand img {
           width: 200px; }
       header .navbar ul {
@@ -6381,5 +6382,74 @@ header {
           header .navbar ul li:hover:before {
             opacity: 1;
             transition: .1s all ease-in-out; } }
+
+.home-slider .owl-carousel figure {
+  margin: 0; }
+  .home-slider .owl-carousel figure figcaption {
+    display: inline-block;
+    padding: 1rem; }
+    .home-slider .owl-carousel figure figcaption .text {
+      padding-bottom: 1rem; }
+      .home-slider .owl-carousel figure figcaption .text h2 {
+        font-size: 32px;
+        font-weight: bold;
+        color: #274183; }
+      .home-slider .owl-carousel figure figcaption .text p {
+        font-size: 18px;
+        color: grey; }
+    .home-slider .owl-carousel figure figcaption ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      list-style-type: none;
+      padding: 0;
+      margin: 0; }
+      .home-slider .owl-carousel figure figcaption ul li {
+        padding-left: 1rem; }
+        .home-slider .owl-carousel figure figcaption ul li a {
+          padding: 1rem 3rem;
+          border: 2px #e2911c solid;
+          border-top-left-radius: 25px;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          border-bottom-left-radius: 5px;
+          color: #274183;
+          font-weight: bold; }
+          .home-slider .owl-carousel figure figcaption ul li a:hover {
+            border: 2px #274183 solid;
+            background: #274183;
+            color: #ffffff;
+            text-decoration: none; }
+  @media (min-width: 992px) {
+    .home-slider .owl-carousel figure {
+      position: relative; }
+      .home-slider .owl-carousel figure figcaption {
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        right: -14%;
+        transform: translate(-50%, -50%); }
+        .home-slider .owl-carousel figure figcaption .text {
+          text-align: right; }
+          .home-slider .owl-carousel figure figcaption .text h2 {
+            position: relative;
+            margin: 0;
+            padding-bottom: .5rem; }
+            .home-slider .owl-carousel figure figcaption .text h2:before {
+              content: "";
+              height: 3px;
+              width: 2.5rem;
+              background: #e2911c;
+              display: flex;
+              position: absolute;
+              bottom: 0%;
+              right: 0%; }
+          .home-slider .owl-carousel figure figcaption .text p {
+            padding: 1rem 0; }
+        .home-slider .owl-carousel figure figcaption ul {
+          justify-content: flex-end;
+          flex-direction: row;
+          text-align: right; } }
 
 /*# sourceMappingURL=main.css.map */

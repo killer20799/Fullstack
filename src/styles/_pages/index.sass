@@ -1,2 +1,69 @@
 .home-slider
-
+	.owl-carousel
+		.owl-nav
+			
+		figure
+			margin: 0
+			figcaption
+				display: inline-block
+				padding: 1rem
+				.text
+					padding-bottom: 1rem
+					h2
+						+fz(32px)
+						+fw(bold)
+						color: #274183
+					p
+						+fz(18px)
+						color: grey
+				ul
+					display: flex
+					justify-content: center
+					align-items: center
+					flex-direction: row
+					list-style-type: none
+					padding: 0
+					margin: 0
+					li
+						padding-left: 1rem
+						a
+							padding: 1rem 3rem
+							border: 2px #e2911c solid
+							+bor-rad( 25px 5px 5px 5px)
+							color: #274183
+							+fw(bold)
+							&:hover
+								border: 2px #274183 solid
+								background: #274183
+								color: #ffffff
+								text-decoration: none
+			+media-breakpoint-up(lg)
+				position: relative
+				figcaption
+					padding: 0
+					position: absolute
+					top: 50%
+					right: -14%
+					transform: translate(-50%, -50%)
+					.text
+						text-align: right
+						h2
+							position: relative
+							margin: 0
+							padding-bottom: .5rem
+							
+							&:before
+								content: ""
+								height: 3px
+								width: 2.5rem
+								background: #e2911c
+								display: flex
+								position: absolute
+								bottom: 0%
+								right: 0%
+						p
+							padding: 1rem 0
+					ul
+						justify-content: flex-end
+						flex-direction: row
+						text-align: right

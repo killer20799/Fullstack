@@ -1,13 +1,17 @@
 $(document).ready(function() {
-    abc()
-        // $('body header .navbar ul li').removeClass('active')
-        // $('body header .navbar ul li a').on('click', function() {
-        //     $(this).parents('li').addClass('active')
-        //     console.log(123)
-        // })
-})
-$(window).scroll(function() {
-    abc()
+    $('.home-slider .owl-carousel').owlCarousel({
+        items: 1,
+        nav: true,
+        loop: true,
+        dots: false,
+
+        responsive: {
+
+        }
+    })
+    $(window).scroll(function() {
+        abc()
+    })
 })
 
 function abc() {
@@ -26,7 +30,3 @@ var scrollToTop = window.setInterval(function() {
         window.clearInterval(scrollToTop);
     }
 }, 16);
-
-function link() {
-
-}
