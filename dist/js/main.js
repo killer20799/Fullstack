@@ -37,8 +37,16 @@ $(document).ready(function () {
         nav: true,
         loop: true,
         dots: false,
+        autoplay: true,
+        autoplaySpeed: 500,
+        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+        responsive: {
+            768: {
+                nav: false,
+                dots: true
 
-        responsive: {}
+            }
+        }
     });
     $(window).scroll(function () {
         abc();

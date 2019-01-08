@@ -1,7 +1,40 @@
 .home-slider
+	position: relative
 	.owl-carousel
 		.owl-nav
-			
+			button
+				outline: none
+				background: none
+				i
+					+lh(2rem)
+					height: 3rem
+					width: 3rem
+					display: flex
+					justify-content: center
+					align-items: center
+					background: #ffffff
+					border: 2px #e2911c solid
+					+bor-rad(5px)
+					color: #274183
+					&:hover
+						border: 2px #274183 solid
+						background: #274183
+						color: #ffffff
+						text-decoration: none
+		.owl-dots
+			position: absolute
+			bottom: 0%
+			right: 4%
+			button
+				outline: none
+				span
+					border-radius: 6px 2px 2px 2px
+				&:hover
+					span
+						background: #274183
+				&.active
+					span
+						background: #274183
 		figure
 			margin: 0
 			figcaption
