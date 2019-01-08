@@ -38,7 +38,6 @@
 		figure
 			margin: 0
 			figcaption
-				display: inline-block
 				padding: 1rem
 				.text
 					padding-bottom: 1rem
@@ -76,7 +75,7 @@
 					padding: 0
 					position: absolute
 					top: 50%
-					right: -14%
+					right: -14rem
 					transform: translate(-50%, -50%)
 					.text
 						text-align: right
@@ -100,3 +99,74 @@
 						justify-content: flex-end
 						flex-direction: row
 						text-align: right
+
+.home-items
+	h2
+		position: relative
+		margin: 0
+		padding: 4rem 0 .5rem 0
+		text-align: center
+		color: #274183
+		text-transform: uppercase
+		+fw(bold)
+		&:before
+			content: ""
+			height: 3px
+			width: 2.5rem
+			background: #e2911c
+			display: flex
+			position: absolute
+			bottom: 0%
+			right: 50%
+			transform: translateX(50%)
+	.item
+		display: flex
+		flex-direction: column
+		padding: 2rem 5rem
+		.boximg
+			position: relative
+			text-align: center
+			padding: 0 2rem
+			margin-top: 2rem
+			border: 1px rgba(0,0,0,0) solid
+			box-shadow: 0 0 13px 0px #80808047
+			+bor-rad(7px 25px 7px 7px)
+			margin: 1rem
+			h5
+				color: #274183
+				+fw(bold)
+				position: relative
+				margin: 0
+				padding-bottom: 1rem
+				text-align: left
+				&:before
+					content: ""
+					height: 3px
+					width: 2.5rem
+					background: #e2911c
+					display: flex
+					position: absolute
+					bottom: 0%
+					left: 0%
+			p
+				text-align: left
+				padding: 1rem 0
+				margin: 0
+				+fz(16px)
+				color: #00000036
+				text-decoration: line-through
+			h6
+				+fz(18px)
+				position: absolute
+				bottom: 2%
+				right: 5%
+				color: #e2911c
+			i
+				+fz(22px)
+				position: absolute
+				top: 4%
+				right: 7%
+				color: #00000036
+				opacity: 1
+				transition: .1s all ease-in-out
+

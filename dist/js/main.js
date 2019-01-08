@@ -32,6 +32,9 @@ $(function () {
     }
 });
 $(document).ready(function () {
+    $(window).scroll(function () {
+        abc();
+    });
     $('.home-slider .owl-carousel').owlCarousel({
         items: 1,
         nav: true,
@@ -48,8 +51,14 @@ $(document).ready(function () {
             }
         }
     });
-    $(window).scroll(function () {
-        abc();
+    $('.home-items .item .boximg .favourite-icon').hide();
+    $('.home-items .item .boximg .default-icon').on('click', function () {
+        $(this).hide();
+        $('.home-items .item .boximg .favourite-icon').show();
+    });
+    $('.home-items .item .boximg .favourite-icon').on('click', function () {
+        $(this).hide();
+        $('.home-items .item .boximg .default-icon').show();
     });
 });
 

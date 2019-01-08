@@ -6419,7 +6419,6 @@ header {
   .home-slider .owl-carousel figure {
     margin: 0; }
     .home-slider .owl-carousel figure figcaption {
-      display: inline-block;
       padding: 1rem; }
       .home-slider .owl-carousel figure figcaption .text {
         padding-bottom: 1rem; }
@@ -6461,7 +6460,7 @@ header {
           padding: 0;
           position: absolute;
           top: 50%;
-          right: -14%;
+          right: -14rem;
           transform: translate(-50%, -50%); }
           .home-slider .owl-carousel figure figcaption .text {
             text-align: right; }
@@ -6484,5 +6483,78 @@ header {
             justify-content: flex-end;
             flex-direction: row;
             text-align: right; } }
+
+.home-items h2 {
+  position: relative;
+  margin: 0;
+  padding: 4rem 0 .5rem 0;
+  text-align: center;
+  color: #274183;
+  text-transform: uppercase;
+  font-weight: bold; }
+  .home-items h2:before {
+    content: "";
+    height: 3px;
+    width: 2.5rem;
+    background: #e2911c;
+    display: flex;
+    position: absolute;
+    bottom: 0%;
+    right: 50%;
+    transform: translateX(50%); }
+
+.home-items .item {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 5rem; }
+  .home-items .item .boximg {
+    position: relative;
+    text-align: center;
+    padding: 0 2rem;
+    margin-top: 2rem;
+    border: 1px rgba(0, 0, 0, 0) solid;
+    box-shadow: 0 0 13px 0px #80808047;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    margin: 1rem; }
+    .home-items .item .boximg h5 {
+      color: #274183;
+      font-weight: bold;
+      position: relative;
+      margin: 0;
+      padding-bottom: 1rem;
+      text-align: left; }
+      .home-items .item .boximg h5:before {
+        content: "";
+        height: 3px;
+        width: 2.5rem;
+        background: #e2911c;
+        display: flex;
+        position: absolute;
+        bottom: 0%;
+        left: 0%; }
+    .home-items .item .boximg p {
+      text-align: left;
+      padding: 1rem 0;
+      margin: 0;
+      font-size: 16px;
+      color: #00000036;
+      text-decoration: line-through; }
+    .home-items .item .boximg h6 {
+      font-size: 18px;
+      position: absolute;
+      bottom: 2%;
+      right: 5%;
+      color: #e2911c; }
+    .home-items .item .boximg i {
+      font-size: 22px;
+      position: absolute;
+      top: 4%;
+      right: 7%;
+      color: #00000036;
+      opacity: 1;
+      transition: .1s all ease-in-out; }
 
 /*# sourceMappingURL=main.css.map */
