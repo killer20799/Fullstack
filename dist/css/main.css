@@ -6440,7 +6440,7 @@ header {
         .home-slider .owl-carousel figure figcaption ul li {
           padding-left: 1rem; }
           .home-slider .owl-carousel figure figcaption ul li a {
-            padding: 1rem 0rem;
+            padding: 1rem 1rem;
             border: 2px #e2911c solid;
             border-top-left-radius: 25px;
             border-top-right-radius: 5px;

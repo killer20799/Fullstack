@@ -48,7 +48,7 @@ $(document).ready(function () {
                 nav: true,
                 dots: false
             },
-            1080: {
+            992: {
                 nav: false,
                 dots: true
 
