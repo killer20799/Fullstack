@@ -6440,7 +6440,7 @@ header {
         .home-slider .owl-carousel figure figcaption ul li {
           padding-left: 1rem; }
           .home-slider .owl-carousel figure figcaption ul li a {
-            padding: 1rem 3rem;
+            padding: 1rem 0rem;
             border: 2px #e2911c solid;
             border-top-left-radius: 25px;
             border-top-right-radius: 5px;
@@ -6454,6 +6454,38 @@ header {
               color: #ffffff;
               text-decoration: none; }
     @media (min-width: 992px) {
+      .home-slider .owl-carousel figure {
+        position: relative; }
+        .home-slider .owl-carousel figure figcaption {
+          padding: 0;
+          position: absolute;
+          top: 50%;
+          right: -10rem;
+          transform: translate(-50%, -50%); }
+          .home-slider .owl-carousel figure figcaption .text {
+            text-align: right; }
+            .home-slider .owl-carousel figure figcaption .text h2 {
+              position: relative;
+              margin: 0;
+              padding-bottom: .5rem; }
+              .home-slider .owl-carousel figure figcaption .text h2:before {
+                content: "";
+                height: 3px;
+                width: 2.5rem;
+                background: #e2911c;
+                display: flex;
+                position: absolute;
+                bottom: 0%;
+                right: 0%; }
+            .home-slider .owl-carousel figure figcaption .text p {
+              padding: 1rem 0; }
+          .home-slider .owl-carousel figure figcaption ul {
+            justify-content: flex-end;
+            flex-direction: row;
+            text-align: right; }
+            .home-slider .owl-carousel figure figcaption ul li a {
+              padding: 1rem 1rem; } }
+    @media (min-width: 1200px) {
       .home-slider .owl-carousel figure {
         position: relative; }
         .home-slider .owl-carousel figure figcaption {
@@ -6482,7 +6514,9 @@ header {
           .home-slider .owl-carousel figure figcaption ul {
             justify-content: flex-end;
             flex-direction: row;
-            text-align: right; } }
+            text-align: right; }
+            .home-slider .owl-carousel figure figcaption ul li a {
+              padding: 1rem 3rem; } }
 
 .home-items h2 {
   position: relative;
@@ -6506,21 +6540,30 @@ header {
 .home-items .item {
   display: flex;
   flex-direction: column;
-  padding: 2rem 5rem; }
+  padding: 2rem 0; }
   .home-items .item .boximg {
     position: relative;
     text-align: center;
     padding: 0 2rem;
     margin-top: 2rem;
-    border: 1px rgba(0, 0, 0, 0) solid;
-    box-shadow: 0 0 13px 0px #80808047;
     border-top-left-radius: 7px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 7px;
     border-bottom-left-radius: 7px;
-    margin: 1rem; }
+    margin: 1rem;
+    transition: .1s all ease-in-out; }
+    .home-items .item .boximg:hover {
+      border: 1px rgba(0, 0, 0, 0) solid;
+      box-shadow: 0 0 13px 0px #80808047;
+      transition: .1s all ease-in-out; }
+      .home-items .item .boximg:hover h5 {
+        color: #274183; }
+        .home-items .item .boximg:hover h5:before {
+          background: #e2911c; }
+      .home-items .item .boximg:hover h6 {
+        color: #e2911c; }
     .home-items .item .boximg h5 {
-      color: #274183;
+      color: #9ca5b4;
       font-weight: bold;
       position: relative;
       margin: 0;
@@ -6530,7 +6573,7 @@ header {
         content: "";
         height: 3px;
         width: 2.5rem;
-        background: #e2911c;
+        background: #e1e5f0;
         display: flex;
         position: absolute;
         bottom: 0%;
@@ -6547,7 +6590,7 @@ header {
       position: absolute;
       bottom: 2%;
       right: 5%;
-      color: #e2911c; }
+      color: #000000; }
     .home-items .item .boximg i {
       font-size: 22px;
       position: absolute;
@@ -6556,5 +6599,8 @@ header {
       color: #00000036;
       opacity: 1;
       transition: .1s all ease-in-out; }
+  @media (min-width: 768px) {
+    .home-items .item {
+      display: flex; } }
 
 /*# sourceMappingURL=main.css.map */

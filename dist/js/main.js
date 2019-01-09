@@ -45,6 +45,10 @@ $(document).ready(function () {
         navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
         responsive: {
             768: {
+                nav: true,
+                dots: false
+            },
+            1080: {
                 nav: false,
                 dots: true
 
@@ -52,13 +56,37 @@ $(document).ready(function () {
         }
     });
     $('.home-items .item .boximg .favourite-icon').hide();
-    $('.home-items .item .boximg .default-icon').on('click', function () {
+    $('.home-items .item .boximg .box1 .default-icon').on('click', function () {
         $(this).hide();
-        $('.home-items .item .boximg .favourite-icon').show();
+        $('.home-items .item .boximg .box1 .favourite-icon').show();
     });
-    $('.home-items .item .boximg .favourite-icon').on('click', function () {
+    $('.home-items .item .boximg .box1 .favourite-icon').on('click', function () {
         $(this).hide();
-        $('.home-items .item .boximg .default-icon').show();
+        $('.home-items .item .boximg .box1 .default-icon').show();
+    });
+    $('.home-items .item .boximg .box2 .default-icon').on('click', function () {
+        $(this).hide();
+        $('.home-items .item .boximg .box2 .favourite-icon').show();
+    });
+    $('.home-items .item .boximg .box2 .favourite-icon').on('click', function () {
+        $(this).hide();
+        $('.home-items .item .boximg .box2 .default-icon').show();
+    });
+    $('.home-items .item .boximg .box3 .default-icon').on('click', function () {
+        $(this).hide();
+        $('.home-items .item .boximg .box3 .favourite-icon').show();
+    });
+    $('.home-items .item .boximg .box3 .favourite-icon').on('click', function () {
+        $(this).hide();
+        $('.home-items .item .boximg .box3 .default-icon').show();
+    });
+    $('.home-items .item .boximg .box4 .default-icon').on('click', function () {
+        $(this).hide();
+        $('.home-items .item .boximg .box4 .favourite-icon').show();
+    });
+    $('.home-items .item .boximg .box4 .favourite-icon').on('click', function () {
+        $(this).hide();
+        $('.home-items .item .boximg .box4 .default-icon').show();
     });
 });
 
