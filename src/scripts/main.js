@@ -19,6 +19,15 @@ $(document).ready(function() {
             }
         }
     })
+    $('.home-infomation .bg .text .owl-carousel').owlCarousel({
+        items: 1,
+        nav: true,
+        loop: true,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 500,
+        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
+    })
     $('.home-products .item .boximg .favourite-icon').hide()
     $('.home-products .item .boximg .box1 .default-icon').on('click', function() {
         $(this).hide()

@@ -6,17 +6,16 @@
 				background: none
 			.owl-prev
 				i
-					
-					+lh(2rem)
-					height: 3rem
-					width: 3rem
+					+lh(1rem)
+					height: 2rem
+					width: 2rem
 					display: flex
 					justify-content: center
 					align-items: center
 					background: #ffffff
 					border: 2px #e2911c solid
 					+bor-rad(25px 5px 5px 5px)
-					color: #274183
+					color: #e2911c
 				&:hover
 					background: none
 					i
@@ -26,16 +25,16 @@
 						text-decoration: none
 			.owl-next
 				i
-					+lh(2rem)
-					height: 3rem
-					width: 3rem
+					+lh(1rem)
+					height: 2rem
+					width: 2rem
 					display: flex
 					justify-content: center
 					align-items: center
 					background: #ffffff
 					border: 2px #e2911c solid
 					+bor-rad(5px 5px 25px 5px)
-					color: #274183
+					color: #e2911c
 				&:hover
 					background: none
 					i
@@ -217,10 +216,54 @@
 			display: flex
 
 .home-infomation
+	margin-top: 3rem
 	.bg
+		position: relative
 		background: #f6f6f6
 		.owl-carousel
-			padding: 4rem 0
+			padding: 2rem 0
+			.owl-nav
+				position: relative
+				button
+					outline: none
+				.owl-prev
+					i
+						+lh(2rem)
+						height: 2rem
+						width: 2rem
+						display: flex
+						justify-content: center
+						align-items: center
+						background: #ffffff
+						border: 2px #e2911c solid
+						+bor-rad(25px 5px 5px 5px)
+						color: #e2911c
+					&:hover
+						background: none
+						i
+							border: 2px #274183 solid
+							background: #274183
+							color: #ffffff
+							text-decoration: none
+				.owl-next
+					i
+						+lh(2rem)
+						height: 2rem
+						width: 2rem
+						display: flex
+						justify-content: center
+						align-items: center
+						background: #ffffff
+						border: 2px #e2911c solid
+						+bor-rad(5px 5px 25px 5px)
+						color: #e2911c
+					&:hover
+						background: none
+						i
+							border: 2px #274183 solid
+							background: #274183
+							color: #ffffff
+							text-decoration: none
 			h2
 				+fz(32px)
 				+fw(bold)
@@ -228,17 +271,134 @@
 			p
 				+fz(18px)
 				color: grey
+		.boximg1
+			filter: grayscale(100%)
+		.boximg2
+			filter: grayscale(100%)
 
 	+media-breakpoint-up(md)
 		.bg
 			background: #f6f6f6
 			margin-left: 10rem
 			border-top-left-radius: 50px
-			height: 600px
+			height: 500px
 			position: relative
 			.text
 				position: absolute
 				width: 100%
-				top: 50%
-				left: 43%
+				top: calc( 50% + 1rem )
+				left: calc( 50% - 5rem)
 				transform: translate( -50%, -50%)
+				padding: 0
+				.owl-carousel
+					padding: 0
+					.owl-nav
+						position: absolute
+						bottom: calc( 0% - 6rem )
+						left: 50%
+						transform: translate( -50%, -50%)
+						i
+							height: 3rem
+							width: 3rem
+					h2
+						+fz(26px)
+					p
+						+fz(16px)
+			.boximg1
+				filter: grayscale(100%)
+				position: absolute
+				bottom: calc( 0% - 3rem )
+				left: calc( 0% - 8rem )
+				
+				img
+					width: 42%
+					+bor-rad(7px 50px 7px 7px)
+			.boximg2
+				filter: grayscale(100%)
+				position: absolute
+				top: calc( 0% - 3rem )
+				right: 0%
+				text-align: right
+				img
+					width: 44%
+					+bor-rad(7px 7px 7px 50px)
+	+media-breakpoint-up(lg)
+		.bg
+			height: 550px
+			position: relative
+			.text
+				position: absolute
+				width: 100%
+				top: calc( 50% - 2rem)
+				left: calc( 50% - 5rem)
+				transform: translate( -50%, -50%)
+				.owl-carousel
+					.owl-nav
+						position: absolute
+						bottom: calc( 0% - 6rem )
+						left: 50%
+						transform: translate( -50%, -50%)
+						i
+							height: 3rem
+							width: 3rem
+					h2
+						+fz(32px)
+					p
+						+fz(18px)
+			.boximg1
+				margin-left: 3rem
+				width: 100%
+				height: 100%
+				position: absolute
+				top: calc( 0% + 12rem )
+				right: calc( 0% - 8rem )
+				img
+					width: 30%
+			.boximg2
+				width: 100%
+				height: 100%
+				position: absolute
+				top: calc( 0% - 4rem )
+				right: 0%
+				img
+					width: 32%
+	+media-breakpoint-up(xl)
+		.bg
+			height: 550px
+			position: relative
+			.text
+				position: absolute
+				width: 100%
+				top: calc( 50% - 2rem)
+				left: calc( 50% - 5rem)
+				transform: translate( -50%, -50%)
+				.owl-carousel
+					.owl-nav
+						position: absolute
+						bottom: calc( 0% - 10rem )
+						left: 50%
+						transform: translate( -50%, -50%)
+						i
+							height: 3rem
+							width: 3rem
+					h2
+						+fz(32px)
+					p
+						+fz(18px)
+			.boximg1
+				margin-left: 3rem
+				width: 100%
+				height: 100%
+				position: absolute
+				top: calc( 0% + 3rem )
+				right: calc( 0% - 8rem )
+				img
+					width: 31%
+			.boximg2
+				width: 100%
+				height: 100%
+				position: absolute
+				top: calc( 0% - 4rem )
+				right: 0%
+				img
+					width: 33%
