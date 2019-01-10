@@ -9,43 +9,34 @@ block variables
 //- Phần khai báo body
 block body
 	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	//-///////////////////////////////
+	//-Start Slider
+	//-///////////////////////////////
 	section.home-slider
 		.owl-carousel.owl-theme
-			figure
-				img.img-fluid(src="./img/bg.png", alt="")
-				figcaption.col-lg-4
-						.text
-							h2 Lorem ipsum dolor sit lorem lore mreorer wlfjsdjf sdf s 
-							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, explicabo libero! Explicabo, necessitatibus eum. Aperiam dolore, eaque laudantium reiciendis consequatur.
-						ul
-							li
-								a(href="") READ MORE
-							li
-								a(href="") READ MORE
-			figure
-				img.img-fluid(src="./img/bg.png", alt="")
-				figcaption.col-lg-4
-						.text
-							h2 Lorem ipsum dolor sit lorem lore mreorer wlfjsdjf sdf s 
-							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, explicabo libero! Explicabo, necessitatibus eum. Aperiam dolore, eaque laudantium reiciendis consequatur.
-						ul
-							li
-								a(href="") READ MORE
-							li
-								a(href="") READ MORE
-			figure
-				img.img-fluid(src="./img/bg.png", alt="")
-				figcaption.col-lg-4
-						.text
-							h2 Lorem ipsum dolor sit lorem lore mreorer wlfjsdjf sdf s 
-							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, explicabo libero! Explicabo, necessitatibus eum. Aperiam dolore, eaque laudantium reiciendis consequatur.
-						ul
-							li
-								a(href="") READ MORE
-							li
-								a(href="") READ MORE
+			-for( x = 0 ; x < 3 ; x++ )
+				figure
+					img.img-fluid(src="./img/bg.png", alt="")
+					figcaption
+						.container
+							.row
+								.col-md-6.offset-md-6
+									.text
+										h2 Lorem ipsum dolor sit amet, consectetur adipisicing.
+										p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quia eius, eum aspernatur velit explicabo tempore doloremque nam sed minus vel est nobis commodi.
+									ul
+										li
+											a(href="") READ MORE
+										li
+											a(href="") READ MORE
+	//-///////////////////////////////
+	//-End Slider
+	//-///////////////////////////////
 
-	section.home-items
+	//-///////////////////////////////
+	//-Start Products
+	//-///////////////////////////////
+	section.home-products
 		h2 Bán chạy
 		.item
 			.container
@@ -94,8 +85,27 @@ block body
 									i.far.fa-heart
 								.favourite-icon
 									i.fas.fa-heart
+	//-///////////////////////////////
+	//-End Products
+	//-///////////////////////////////
 
+	//-///////////////////////////////
+	//-Start Information
+	//-///////////////////////////////
 	section.home-infomation
-		.container
-			.row
-				.col-md
+		.bg
+
+			.text
+				.container
+					.row
+						.col-md-4.offset-md-4
+							.owl-carousel.owl-theme
+								h2 Lorem ipsum dolor sit amet.
+								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, omnis.
+								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, omnis.
+								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, omnis.
+								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, omnis.
+
+	//-///////////////////////////////
+	//-End Information
+	//-///////////////////////////////

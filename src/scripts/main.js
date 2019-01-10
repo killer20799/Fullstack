@@ -11,49 +11,46 @@ $(document).ready(function() {
         autoplaySpeed: 500,
         navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
         responsive: {
-            768: {
-                nav: true,
-                dots: false,
-            },
-            992: {
+            480: {
+                items: 1,
                 nav: false,
                 dots: true,
 
             }
         }
     })
-    $('.home-items .item .boximg .favourite-icon').hide()
-    $('.home-items .item .boximg .box1 .default-icon').on('click', function() {
+    $('.home-products .item .boximg .favourite-icon').hide()
+    $('.home-products .item .boximg .box1 .default-icon').on('click', function() {
         $(this).hide()
-        $('.home-items .item .boximg .box1 .favourite-icon').show()
+        $('.home-products .item .boximg .box1 .favourite-icon').show()
     })
-    $('.home-items .item .boximg .box1 .favourite-icon').on('click', function() {
+    $('.home-products .item .boximg .box1 .favourite-icon').on('click', function() {
         $(this).hide()
-        $('.home-items .item .boximg .box1 .default-icon').show()
+        $('.home-products .item .boximg .box1 .default-icon').show()
     })
-    $('.home-items .item .boximg .box2 .default-icon').on('click', function() {
+    $('.home-products .item .boximg .box2 .default-icon').on('click', function() {
         $(this).hide()
-        $('.home-items .item .boximg .box2 .favourite-icon').show()
+        $('.home-products .item .boximg .box2 .favourite-icon').show()
     })
-    $('.home-items .item .boximg .box2 .favourite-icon').on('click', function() {
+    $('.home-products .item .boximg .box2 .favourite-icon').on('click', function() {
         $(this).hide()
-        $('.home-items .item .boximg .box2 .default-icon').show()
+        $('.home-products .item .boximg .box2 .default-icon').show()
     })
-    $('.home-items .item .boximg .box3 .default-icon').on('click', function() {
+    $('.home-products .item .boximg .box3 .default-icon').on('click', function() {
         $(this).hide()
-        $('.home-items .item .boximg .box3 .favourite-icon').show()
+        $('.home-products .item .boximg .box3 .favourite-icon').show()
     })
-    $('.home-items .item .boximg .box3 .favourite-icon').on('click', function() {
+    $('.home-products .item .boximg .box3 .favourite-icon').on('click', function() {
         $(this).hide()
-        $('.home-items .item .boximg .box3 .default-icon').show()
+        $('.home-products .item .boximg .box3 .default-icon').show()
     })
-    $('.home-items .item .boximg .box4 .default-icon').on('click', function() {
+    $('.home-products .item .boximg .box4 .default-icon').on('click', function() {
         $(this).hide()
-        $('.home-items .item .boximg .box4 .favourite-icon').show()
+        $('.home-products .item .boximg .box4 .favourite-icon').show()
     })
-    $('.home-items .item .boximg .box4 .favourite-icon').on('click', function() {
+    $('.home-products .item .boximg .box4 .favourite-icon').on('click', function() {
         $(this).hide()
-        $('.home-items .item .boximg .box4 .default-icon').show()
+        $('.home-products .item .boximg .box4 .default-icon').show()
     })
 });
 
