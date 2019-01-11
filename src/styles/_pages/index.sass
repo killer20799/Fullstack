@@ -7,8 +7,8 @@
 			.owl-prev
 				i
 					+lh(1rem)
-					height: 2rem
-					width: 2rem
+					height: 3rem
+					width: 3rem
 					display: flex
 					justify-content: center
 					align-items: center
@@ -26,8 +26,8 @@
 			.owl-next
 				i
 					+lh(1rem)
-					height: 2rem
-					width: 2rem
+					height: 3rem
+					width: 3rem
 					display: flex
 					justify-content: center
 					align-items: center
@@ -229,8 +229,8 @@
 				.owl-prev
 					i
 						+lh(2rem)
-						height: 2rem
-						width: 2rem
+						height: 3rem
+						width: 3rem
 						display: flex
 						justify-content: center
 						align-items: center
@@ -248,8 +248,8 @@
 				.owl-next
 					i
 						+lh(2rem)
-						height: 2rem
-						width: 2rem
+						height: 3rem
+						width: 3rem
 						display: flex
 						justify-content: center
 						align-items: center
@@ -284,6 +284,7 @@
 			height: 500px
 			position: relative
 			.text
+				z-index: 1
 				position: absolute
 				width: 100%
 				top: calc( 50% + 1rem )
@@ -294,14 +295,25 @@
 					padding: 0
 					.owl-nav
 						position: absolute
-						bottom: calc( 0% - 6rem )
-						left: 50%
+						bottom: calc( 0% + 2rem )
+						right: -145%
 						transform: translate( -50%, -50%)
 						i
 							height: 3rem
 							width: 3rem
 					h2
 						+fz(26px)
+						position: relative
+						padding-bottom: .5rem
+						&:before
+							display: inline-block
+							content: ""
+							height: 2px
+							width: 2.5rem
+							position: absolute
+							bottom: 0%
+							left: 0%
+							background: #e2911c
 					p
 						+fz(16px)
 			.boximg1
@@ -327,6 +339,7 @@
 			height: 550px
 			position: relative
 			.text
+				z-index: 1
 				position: absolute
 				width: 100%
 				top: calc( 50% - 2rem)
@@ -335,8 +348,8 @@
 				.owl-carousel
 					.owl-nav
 						position: absolute
-						bottom: calc( 0% - 6rem )
-						left: 50%
+						bottom: calc( 0% - 9rem )
+						left: 22%
 						transform: translate( -50%, -50%)
 						i
 							height: 3rem
@@ -348,7 +361,6 @@
 			.boximg1
 				margin-left: 3rem
 				width: 100%
-				height: 100%
 				position: absolute
 				top: calc( 0% + 12rem )
 				right: calc( 0% - 8rem )
@@ -356,7 +368,6 @@
 					width: 30%
 			.boximg2
 				width: 100%
-				height: 100%
 				position: absolute
 				top: calc( 0% - 4rem )
 				right: 0%
@@ -364,9 +375,10 @@
 					width: 32%
 	+media-breakpoint-up(xl)
 		.bg
-			height: 550px
+			height: 650px
 			position: relative
 			.text
+				z-index: 1
 				position: absolute
 				width: 100%
 				top: calc( 50% - 2rem)
@@ -376,7 +388,7 @@
 					.owl-nav
 						position: absolute
 						bottom: calc( 0% - 10rem )
-						left: 50%
+						left: 18%
 						transform: translate( -50%, -50%)
 						i
 							height: 3rem
@@ -386,19 +398,21 @@
 					p
 						+fz(18px)
 			.boximg1
-				margin-left: 3rem
+				margin-left: 2rem
 				width: 100%
-				height: 100%
 				position: absolute
-				top: calc( 0% + 3rem )
+				top: calc( 0% + 5rem )
 				right: calc( 0% - 8rem )
 				img
-					width: 31%
+					width: 29%
 			.boximg2
 				width: 100%
-				height: 100%
 				position: absolute
-				top: calc( 0% - 4rem )
+				top: calc( 0% - 5rem )
 				right: 0%
 				img
-					width: 33%
+					width: 31%
+
+.home-client
+	.client
+		margin: 6rem 2rem 2rem 2rem

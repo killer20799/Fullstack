@@ -6383,14 +6383,77 @@ header {
             opacity: 1;
             transition: .1s all ease-in-out; } }
 
+footer {
+  background: #f7f7f7;
+  padding: 6rem 0; }
+  footer figure {
+    margin: 0; }
+    footer figure img {
+      width: 60%;
+      filter: grayscale(100%); }
+      footer figure img:hover {
+        filter: grayscale(0); }
+  footer figcaption {
+    margin-right: 2rem; }
+    footer figcaption h2 {
+      font-size: 26px;
+      padding: 2rem 0;
+      color: #8e8c8c; }
+      footer figcaption h2:hover {
+        color: #000000; }
+    footer figcaption p {
+      font-size: 16px;
+      font-weight: bold;
+      color: #8e8c8c; }
+      footer figcaption p:hover {
+        color: #000000; }
+    footer figcaption ul li {
+      padding-right: .6rem; }
+      footer figcaption ul li i {
+        background: #8e8c8c;
+        color: #ffffff;
+        line-height: 2rem;
+        width: 3rem;
+        height: 3rem;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px 5px 5px 5px; }
+        footer figcaption ul li i:hover {
+          background: #274183; }
+  footer .text h2 {
+    font-size: 20px;
+    position: relative;
+    padding-bottom: .5rem;
+    margin: 0;
+    color: #274183; }
+    footer .text h2:before {
+      content: "";
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      background: #e2911c;
+      height: 3px;
+      width: 2rem; }
+  footer .text ul {
+    padding-top: .5rem; }
+    footer .text ul li {
+      padding: .5rem 0; }
+      footer .text ul li a {
+        color: #8e8c8c;
+        font-size: 18px; }
+      footer .text ul li:hover a {
+        color: #274183;
+        text-decoration: none; }
+
 .home-slider .owl-carousel .owl-nav button {
   outline: none;
   background: none; }
 
 .home-slider .owl-carousel .owl-nav .owl-prev i {
   line-height: 1rem;
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6412,8 +6475,8 @@ header {
 
 .home-slider .owl-carousel .owl-nav .owl-next i {
   line-height: 1rem;
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6622,8 +6685,8 @@ header {
           outline: none; }
         .home-infomation .bg .owl-carousel .owl-nav .owl-prev i {
           line-height: 2rem;
-          height: 2rem;
-          width: 2rem;
+          height: 3rem;
+          width: 3rem;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -6643,8 +6706,8 @@ header {
             text-decoration: none; }
         .home-infomation .bg .owl-carousel .owl-nav .owl-next i {
           line-height: 2rem;
-          height: 2rem;
-          width: 2rem;
+          height: 3rem;
+          width: 3rem;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -6681,6 +6744,7 @@ header {
       height: 500px;
       position: relative; }
       .home-infomation .bg .text {
+        z-index: 1;
         position: absolute;
         width: 100%;
         top: calc( 50% + 1rem);
@@ -6691,14 +6755,25 @@ header {
           padding: 0; }
           .home-infomation .bg .text .owl-carousel .owl-nav {
             position: absolute;
-            bottom: calc( 0% - 6rem);
-            left: 50%;
+            bottom: calc( 0% + 2rem);
+            right: -145%;
             transform: translate(-50%, -50%); }
             .home-infomation .bg .text .owl-carousel .owl-nav i {
               height: 3rem;
               width: 3rem; }
           .home-infomation .bg .text .owl-carousel h2 {
-            font-size: 26px; }
+            font-size: 26px;
+            position: relative;
+            padding-bottom: .5rem; }
+            .home-infomation .bg .text .owl-carousel h2:before {
+              display: inline-block;
+              content: "";
+              height: 2px;
+              width: 2.5rem;
+              position: absolute;
+              bottom: 0%;
+              left: 0%;
+              background: #e2911c; }
           .home-infomation .bg .text .owl-carousel p {
             font-size: 16px; }
       .home-infomation .bg .boximg1 {
@@ -6729,6 +6804,7 @@ header {
       height: 550px;
       position: relative; }
       .home-infomation .bg .text {
+        z-index: 1;
         position: absolute;
         width: 100%;
         top: calc( 50% - 2rem);
@@ -6736,8 +6812,8 @@ header {
         transform: translate(-50%, -50%); }
         .home-infomation .bg .text .owl-carousel .owl-nav {
           position: absolute;
-          bottom: calc( 0% - 6rem);
-          left: 50%;
+          bottom: calc( 0% - 9rem);
+          left: 22%;
           transform: translate(-50%, -50%); }
           .home-infomation .bg .text .owl-carousel .owl-nav i {
             height: 3rem;
@@ -6749,7 +6825,6 @@ header {
       .home-infomation .bg .boximg1 {
         margin-left: 3rem;
         width: 100%;
-        height: 100%;
         position: absolute;
         top: calc( 0% + 12rem);
         right: calc( 0% - 8rem); }
@@ -6757,7 +6832,6 @@ header {
           width: 30%; }
       .home-infomation .bg .boximg2 {
         width: 100%;
-        height: 100%;
         position: absolute;
         top: calc( 0% - 4rem);
         right: 0%; }
@@ -6765,9 +6839,10 @@ header {
           width: 32%; } }
   @media (min-width: 1200px) {
     .home-infomation .bg {
-      height: 550px;
+      height: 650px;
       position: relative; }
       .home-infomation .bg .text {
+        z-index: 1;
         position: absolute;
         width: 100%;
         top: calc( 50% - 2rem);
@@ -6776,7 +6851,7 @@ header {
         .home-infomation .bg .text .owl-carousel .owl-nav {
           position: absolute;
           bottom: calc( 0% - 10rem);
-          left: 50%;
+          left: 18%;
           transform: translate(-50%, -50%); }
           .home-infomation .bg .text .owl-carousel .owl-nav i {
             height: 3rem;
@@ -6786,21 +6861,22 @@ header {
         .home-infomation .bg .text .owl-carousel p {
           font-size: 18px; }
       .home-infomation .bg .boximg1 {
-        margin-left: 3rem;
+        margin-left: 2rem;
         width: 100%;
-        height: 100%;
         position: absolute;
-        top: calc( 0% + 3rem);
+        top: calc( 0% + 5rem);
         right: calc( 0% - 8rem); }
         .home-infomation .bg .boximg1 img {
-          width: 31%; }
+          width: 29%; }
       .home-infomation .bg .boximg2 {
         width: 100%;
-        height: 100%;
         position: absolute;
-        top: calc( 0% - 4rem);
+        top: calc( 0% - 5rem);
         right: 0%; }
         .home-infomation .bg .boximg2 img {
-          width: 33%; } }
+          width: 31%; } }
+
+.home-client .client {
+  margin: 6rem 2rem 2rem 2rem; }
 
 /*# sourceMappingURL=main.css.map */

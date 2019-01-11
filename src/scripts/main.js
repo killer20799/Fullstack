@@ -11,7 +11,7 @@ $(document).ready(function() {
         autoplaySpeed: 500,
         navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
         responsive: {
-            480: {
+            768: {
                 items: 1,
                 nav: false,
                 dots: true,
