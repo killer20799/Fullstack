@@ -6587,7 +6587,8 @@ footer {
       padding: 1rem 3rem; } }
 
 .home-products {
-  padding: 0 1rem; }
+  padding: 0 1rem 3rem 1rem;
+  margin-bottom: 1rem; }
   .home-products h2 {
     position: relative;
     margin: 0;
@@ -6621,9 +6622,9 @@ footer {
       margin-bottom: 2rem;
       transition: .1s all ease-in-out; }
       .home-products .item .boximg:hover {
-        border: 1px rgba(0, 0, 0, 0) solid;
         box-shadow: 0 0 13px 0px #80808047;
-        transition: .1s all ease-in-out; }
+        transition: .1s all ease-in-out;
+        z-index: 1; }
         .home-products .item .boximg:hover i {
           color: #c0392b; }
         .home-products .item .boximg:hover h5 {
