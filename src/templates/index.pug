@@ -32,14 +32,13 @@ block body
 	//-///////////////////////////////
 	//-End Slider
 	//-///////////////////////////////
-
 	//-///////////////////////////////
 	//-Start Products
 	//-///////////////////////////////
 	section.home-products
 		h2 Bán chạy
 		.item
-			.container
+			.container-fluid
 				.row
 					.col-md-6.col-lg-3
 						.boximg
@@ -88,7 +87,6 @@ block body
 	//-///////////////////////////////
 	//-End Products
 	//-///////////////////////////////
-
 	//-///////////////////////////////
 	//-Start Information
 	//-///////////////////////////////
@@ -118,14 +116,18 @@ block body
 	//-End Information
 	//-///////////////////////////////
 	section.home-client
-		.container
-			.row
-				.client
-					.col
-						img.img-fluid(src="./img/ads.png", alt="")
-						h2 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-						p CEO - GC
-						h5 Nguyen Thanh Heo
+		.owl-carousel.owl-theme
+			-for(x=0;x<4;x++)
+				.item
+					.container
+						.row
+							.col
+								.client
+									.box-img
+									.text
+										h2 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										h6 CEO-GC
+										p Nguyen Van Heo
 	//-///////////////////////////////
 	//-End Information
 	//-///////////////////////////////
