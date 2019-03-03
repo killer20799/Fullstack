@@ -31,4 +31,7 @@ $(function () {
         $('select.form-control').removeClass('form-control').css('width', '100%');
     }
 });
+$(document).ready(function () {});
+$(window).scroll(function () {});
+$(window).resize(function () {});
 //# sourceMappingURL=main.js.map
