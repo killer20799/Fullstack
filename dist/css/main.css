@@ -7030,4 +7030,29 @@ html, body {
   .container {
     width: auto; } }
 
+.wrapper {
+  width: 600px;
+  margin: 20px auto;
+  /* Only display 'more' to begin with */ }
+  .wrapper .desc-wrapper {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    max-height: 120px;
+    overflow: hidden; }
+  .wrapper .more-info {
+    /* Hide more info to begin with and reveal if text inside desc is too long*/
+    display: none; }
+  .wrapper .more-info .less,
+  .wrapper .more-info.expand .more {
+    display: none; }
+  .wrapper .more-info.expand .less {
+    display: inline; }
+
+/* Misc, just to make things look a bit prettier */
+.more-info:focus {
+  outline: none; }
+
+span.glyphicon {
+  margin-left: 3px; }
+
 /*# sourceMappingURL=main.css.map */
